@@ -10,10 +10,10 @@ floorDiv= a // b
 mod= a % b
 exp= a ** b
 print(f"Addition of {a} + {b} : ", add)
-print(f"Subtraction of {a} + {b} : ", sub)
-print(f"Multiplication of {a} + {b} : ", mul)
-print(f"Division of {a} + {b} : ", div)
-print(f"Floor Division of {a} + {b} : ", floorDiv)
-print(f"Modulus of {a} + {b} : ", mod)
-print(f"Exponentiation of {a} + {b} : ", exp)
+print(f"Subtraction of {a} - {b} : ", sub)
+print(f"Multiplication of {a} * {b} : ", mul)
+print(f"Division of {a} / {b} : ", div)
+print(f"Floor Division of {a} // {b} : ", floorDiv)
+print(f"Modulus of {a} % {b} : ", mod)
+print(f"Exponentiation of {a} ** {b} : ", exp)
 print("Thank you for using the calculator!")
