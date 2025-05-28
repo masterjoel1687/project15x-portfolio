@@ -26,3 +26,4 @@ def safe_calci():
 
 if __name__ == "__main__":
     safe_calci()
+    

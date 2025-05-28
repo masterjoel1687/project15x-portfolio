@@ -35,7 +35,3 @@ def contact_book():
             print("Invalid option. Please try again.\n")
 
 contact_book()
-
-
-
-
