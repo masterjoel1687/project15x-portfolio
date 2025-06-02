@@ -1,23 +1,19 @@
 def register_user():
     username = input("Choose a username: ")
     password = input("Choose a password: ")
-    with open("users.txt", "a", encoding="utf-8") as f:
+    with open("users.txt", "a") as f:
         f.write(f"{username}:{password}\n")
     print("Registration successful.")
 
 def login_user():
     username = input("Username: ")
     password = input("Password: ")
-    try:
-        with open("users.txt", "r", encoding="utf-8") as f:
-            for line in f:
-                saved_user, saved_pass = line.strip().split(":", 1)
-                if username == saved_user and password == saved_pass:
-                    print("Login successful.")
-                    return
-            print("Login failed. Invalid credentials.")
-    except FileNotFoundError:
-        print("No users registered yet.")
+    for line in open("users.txt", "r"):
+        saved_user, saved_pass = line.strip().split(":", 1)
+        if username == saved_user and password == saved_pass:
+            print("Login successful.")
+            return
+    print("Login failed. Invalid credentials.")
 
 if __name__ == "__main__":
     while True:
